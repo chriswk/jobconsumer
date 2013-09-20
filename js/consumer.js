@@ -4,7 +4,7 @@ $(document).ready(function () {
 		dataType:"jsonp"
 	}).done(function (data) {
 		$.each(data.ads, function (idx, ad) {
-			var holder = $("<div></div>").text(idx + " " +ad.ad.title);
+			var holder = $("<div></div>").text("idx: " +idx + "id: " +ad.id + " title:" +ad.title);
 			$("#adholder").append(holder);
 		});
 	});
